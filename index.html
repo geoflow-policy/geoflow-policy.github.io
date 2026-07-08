@@ -47,7 +47,7 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
 
-  <title>CurveFlow</title>
+  <title>GeoFlow</title>
   
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
@@ -255,21 +255,20 @@ vergence efficiency and task success rates.
        <div class="item">
         <img src="static/images/pipeline.png" alt="First research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Figure presents the complete CurveFlow framework, which synergizes robust perception with precise motion generation. The pipeline begins with a Spatio-Temporal Canonical Representation module (left) that processes multi-step point clouds into a standardized coordinate system, ensuring SE(3)-equivariant feature extraction that is resilient to viewpoint shifts. These stable geometric features are then fed into the Curvature-Guided Flow Matching Action Head (right), which generates high-fidelity action trajectories by learning probability-aware paths rather than simple linear interpolations.
+          Figure presents the complete GeoFlow framework, which synergizes robust perception with precise motion generation. The pipeline begins with a Spatio-Temporal Canonical Representation module (left) that processes multi-step point clouds into a standardized coordinate system, ensuring SE(3)-equivariant feature extraction that is resilient to viewpoint shifts. These stable geometric features are then fed into the Curvature-Guided Flow Matching Action Head (right), which generates high-fidelity action trajectories by learning probability-aware paths rather than simple linear interpolations.
         </h2>
       </div>
-      -->
       <div class="item">
         <img src="static/images/method.png" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
          (a) illustrates the Data Canonicalization Pipeline, the core mechanism that decouples intrinsic object geometry from global pose variations. To achieve this, the system first decentralizes the raw point cloud to remove translation bias , then utilizes an SO(3)-equivariant network to estimate the relative rotation , and finally applies an inverse transformation to map the observation into a unified "canonical" space. This explicit geometric standardization ensures that the policy learns consistent manipulation logic regardless of how the camera or objects are oriented in the scene.
-         (b) visualizes the theoretical advantage of our Curvature-Guided Flow Matching approach compared to traditional methods. While standard Rectified Flow forces the generation process along a rigid linear path (grey dashed line) that may cross into physically implausible low-likelihood regions, CurveFlow introduces learnable curvature coefficients to define a flexible non-linear trajectory (blue solid line). This allows the model to adaptively align the probability transport path with the natural geometry of the action manifold, resulting in smoother and more stable motion generation.
+         (b) visualizes the theoretical advantage of our Curvature-Guided Flow Matching approach compared to traditional methods. While standard Rectified Flow forces the generation process along a rigid linear path (grey dashed line) that may cross into physically implausible low-likelihood regions, GeoFlow introduces learnable curvature coefficients to define a flexible non-linear trajectory (blue solid line). This allows the model to adaptively align the probability transport path with the natural geometry of the action manifold, resulting in smoother and more stable motion generation.
        </h2>
      </div>
      <div class="item">
       <img src="static/images/tasks.png" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        Figure  demonstrates the real-world performance of CurveFlow across four diverse manipulation tasks: Sorting parts, Tower of Hanoi, Battery insertion, and Hammer cleanup. The execution sequences highlight the robot's capability to handle contact-rich operations and precise pick-and-place actions, such as the tight-tolerance alignment required for inserting a battery. These results validate that the proposed geometric constraints and curvature guidance successfully enable zero-shot transfer from simulation to real-world platforms without requiring additional fine-tuning.
+        Figure  demonstrates the real-world performance of GeoFlow across four diverse manipulation tasks: Sorting parts, Tower of Hanoi, Battery insertion, and Hammer cleanup. The execution sequences highlight the robot's capability to handle contact-rich operations and precise pick-and-place actions, such as the tight-tolerance alignment required for inserting a battery. These results validate that the proposed geometric constraints and curvature guidance successfully enable zero-shot transfer from simulation to real-world platforms without requiring additional fine-tuning.
       </h2>
     </div>
   </div>
@@ -517,12 +516,12 @@ vergence efficiency and task success rates.
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{CurveFlow2026,
+      <pre id="bibtex-code"><code>@article{GeoFlow2026,
   title={Curvature-Guided Flow Matching via SE(3)-Canonical Point Clouds for Robot Imitation Learning},
   author={Anonymous},
   journal={Conference/Journal Name},
   year={2026},
-  url={https://curveflow-policy.github.io}
+  url={https://geoflow-policy.github.io}
 }</code></pre>
     </div>
 </section>
