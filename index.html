@@ -5,35 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" type="image/x-icon" href="static/images/my.ico">
-  <meta name="title" content="Curvature-Guided Flow Matching via SE(3)-Canonical Point Clouds for Robot Imitation Learning">
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <meta name="title" content="Geoflow: Geometry-Conditioned Flow Matching via Canonical Point Clouds for SE(3)-Consistent Robotic Imitation Learning">
+  <meta name="description" content="Geoflow is a geometry-conditioned flow matching framework for SE(3)-consistent robot manipulation from point cloud observations.">
+  <meta name="keywords" content="robot manipulation, imitation learning, flow matching, equivariant policy">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Curvature-Guided Flow Matching via SE(3)-Canonical Point Clouds for Robot Imitation Learning">
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:title" content="Geoflow: Geometry-Conditioned Flow Matching via Canonical Point Clouds for SE(3)-Consistent Robotic Imitation Learning">
+  <meta property="og:description" content="Geoflow is a geometry-conditioned flow matching framework for SE(3)-consistent robot manipulation from point cloud observations.">
+  <meta property="og:url" content="https://geoflow-policy.github.io/">
+  <meta property="og:image" content="https://geoflow-policy.github.io/static/images/pipeline.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Curvature-Guided Flow Matching - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="og:image:alt" content="Geoflow - Research Preview">
+  <meta property="article:published_time" content="2026-01-01T00:00:00.000Z">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="robot manipulation">
+  <meta property="article:tag" content="flow matching">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Curvature-Guided Flow Matching via SE(3)-Canonical Point Clouds for Robot Imitation Learning">
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="Curvature-Guided Flow Matching - Research Preview">
+  <meta name="twitter:title" content="Geoflow: Geometry-Conditioned Flow Matching via Canonical Point Clouds for SE(3)-Consistent Robotic Imitation Learning">
+  <meta name="twitter:description" content="Geoflow is a geometry-conditioned flow matching framework for SE(3)-consistent robot manipulation from point cloud observations.">
+  <meta name="twitter:image" content="https://geoflow-policy.github.io/static/images/pipeline.png">
+  <meta name="twitter:image:alt" content="Geoflow - Research Preview">
 
-  <meta name="citation_title" content="Curvature-Guided Flow Matching via SE(3)-Canonical Point Clouds for Robot Imitation Learning">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  <meta name="citation_title" content="Geoflow: Geometry-Conditioned Flow Matching via Canonical Point Clouds for SE(3)-Consistent Robotic Imitation Learning">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="IEEE TASE">
+  <meta name="citation_pdf_url" content="https://geoflow-policy.github.io/static/pdfs/paper.pdf">
   
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
@@ -47,7 +47,7 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
 
-  <title>GeoFlow</title>
+  <title>Geoflow</title>
   
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
@@ -77,33 +77,33 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "Curvature-Guided Flow Matching via SE(3)-Canonical Point Clouds for Robot Imitation Learning",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "Geoflow: Geometry-Conditioned Flow Matching via Canonical Point Clouds for SE(3)-Consistent Robotic Imitation Learning",
+    "description": "Geoflow is a geometry-conditioned flow matching framework for SE(3)-consistent robot manipulation from point cloud observations.",
     "author": [],
-    "datePublished": "2024-01-01",
+    "datePublished": "2026-01-01",
     "publisher": {
       "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "name": "IEEE"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "url": "https://geoflow-policy.github.io/",
+    "image": "https://geoflow-policy.github.io/static/images/pipeline.png",
+    "keywords": ["robot manipulation", "imitation learning", "flow matching", "equivariant policy"],
+    "abstract": "Vision-based imitation learning using 3D point clouds has emerged as a critical paradigm for robots to acquire complex manipulation skills, leveraging rich geometric priors and view-invariant spatial representations. However, existing point cloud-based policies often suffer from instability and poor generalization when deployed in real-world environments characterized by sensor noise and varying viewpoints. To address this bottleneck, we propose Geoflow, a geometry-conditioned flow matching framework designed for SE(3)-consistent robot manipulation from point cloud observations. Geoflow constructs a temporal-aware canonical representation by embedding SE(3)-equivariance into temporal modeling, and directly drives a geometry-conditioned flow matching strategy using the synergistically aggregated cross-frame features. This concurrently strengthens perceptual robustness against unstructured disturbances and adaptively reshapes probability flow paths to reduce the traversal of low-likelihood regions, promoting high-fidelity action synthesis. Extensive evaluations across simulated benchmarks (Robomimic and RLBench) and real-world deployments demonstrate that Geoflow consistently outperforms state-of-the-art baselines in both success rates and robustness. Particularly in constrained tasks, our method maintains robust performance, outperforming existing flow-based and equivariant baselines by an average of 18.8%. The codes and more details are available at https://geoflow-policy.github.io/.",
+    "citation": "@article{Geoflow2026, title={Geoflow: Geometry-Conditioned Flow Matching via Canonical Point Clouds for SE(3)-Consistent Robotic Imitation Learning}, author={Anonymous}, year={2026}, url={https://geoflow-policy.github.io}}",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+      "@id": "https://geoflow-policy.github.io/"
     },
     "about": [
       {
         "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
+        "name": "robot manipulation"
       },
       {
         "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
+        "name": "flow matching"
       }
     ]
   }
@@ -165,9 +165,9 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Curvature-Guided Flow Matching via
-              SE(3)-Canonical Point Clouds for Robot
-              Imitation Learning</h1>
+            <h1 class="title is-1 publication-title">Geoflow: Geometry-Conditioned Flow Matching via
+              Canonical Point Clouds for SE(3)-Consistent
+              Robotic Imitation Learning</h1>
             <div class="column has-text-centered">
                     <div class="publication-links">
                       <span class="link-block">
@@ -217,31 +217,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Imitation learning has emerged as a pivotal
-paradigm for embodied agents to acquire complex manipu
-lation skills. However, in real-world environments charac
-terized by dynamic occlusions and viewpoint variations,
-existing 3D point cloud-based policies often suffer from
-instability and poor generalization, primarily due to the
-neglect of temporal geometric continuity. To address these
-challenges, this paper proposes a Canonical Curve Flow
-Policy for robust robot manipulation. Specifically, we in
-troduce a temporal-aware canonical point cloud represen
-tation framework that incorporates SE(3)-equivariance into
-temporal modeling. By synergistically aggregating cross
-frame geometric features, this framework significantly en
-hances perceptual robustness against unstructured distur
-bances. Furthermore, to overcome the limitations of linear
-trajectory assumptions in conventional rectified flow meth
-ods, we design a curvature-guided flow matching strat
-egy. This strategy facilitates the learning of probability
-aware nonlinear trajectories, enabling the generation pro
-cess to effectively circumvent low-likelihood regions of the
-data manifold for precise motion control. Extensive exper
-iments on Robomimic and RLBench benchmarks, as well
-as real-world robot tasks, demonstrate that the proposed
-method outperforms state-of-the-art baselines in both con
-vergence efficiency and task success rates.
+            Vision-based imitation learning using 3D point clouds has emerged as a critical paradigm for robots to acquire complex manipulation skills, leveraging rich geometric priors and view-invariant spatial representations.
+            However, existing point cloud-based policies often suffer from instability and poor generalization when deployed in real-world environments characterized by sensor noise and varying viewpoints.
+            To address this bottleneck, we propose Geoflow, a geometry-conditioned flow matching framework designed for SE(3)-consistent robot manipulation from point cloud observations.
+            Geoflow constructs a temporal-aware canonical representation by embedding SE(3)-equivariance into temporal modeling, and directly drives a geometry-conditioned flow matching strategy using the synergistically aggregated cross-frame features. This concurrently strengthens perceptual robustness against unstructured disturbances and adaptively reshapes probability flow paths to reduce the traversal of low-likelihood regions, promoting high-fidelity action synthesis.
+            Extensive evaluations across simulated benchmarks (Robomimic and RLBench) and real-world deployments demonstrate that Geoflow consistently outperforms state-of-the-art baselines in both success rates and robustness.
+            Particularly in constrained tasks, our method maintains robust performance, outperforming existing flow-based and equivariant baselines by an average of 18.8%.
+            The codes and more details are available at <a href="https://geoflow-policy.github.io/" target="_blank">https://geoflow-policy.github.io/</a>.
           </p>
         </div>
       </div>
@@ -516,10 +498,10 @@ vergence efficiency and task success rates.
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{GeoFlow2026,
-  title={Curvature-Guided Flow Matching via SE(3)-Canonical Point Clouds for Robot Imitation Learning},
+      <pre id="bibtex-code"><code>@article{Geoflow2026,
+  title={Geoflow: Geometry-Conditioned Flow Matching via Canonical Point Clouds for SE(3)-Consistent Robotic Imitation Learning},
   author={Anonymous},
-  journal={Conference/Journal Name},
+  journal={IEEE Transactions on Automation Science and Engineering},
   year={2026},
   url={https://geoflow-policy.github.io}
 }</code></pre>
