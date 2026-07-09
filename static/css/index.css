@@ -362,6 +362,81 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* Viewpoint robustness comparison layout */
+.viewpoint-section {
+  margin-top: 1rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.viewpoint-description {
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  text-align: justify;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.viewpoint-group {
+  margin-bottom: 3.5rem;
+}
+
+.viewpoint-group:last-child {
+  margin-bottom: 0;
+}
+
+.viewpoint-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.comparison-videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.comparison-video-item {
+  position: relative;
+  width: 100%;
+  background: var(--background-primary);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+}
+
+.comparison-video-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.comparison-video-item video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+}
+
+.comparison-method-name {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  padding: 0.75rem 0.5rem;
+  font-family: 'Inter', sans-serif;
+  background: var(--background-secondary);
+  border-top: 1px solid var(--border-color);
+}
+
 /* Pagination and Misc Improvements */
 .slider-pagination .slider-page {
   background: var(--primary-color);
@@ -741,6 +816,15 @@ code {
     gap: 1rem;
     margin-top: 1.5rem;
   }
+
+  .comparison-videos {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .viewpoint-group {
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -796,6 +880,11 @@ code {
   .task-videos {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
+  }
+
+  .comparison-videos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 }
 

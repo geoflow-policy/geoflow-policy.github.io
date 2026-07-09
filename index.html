@@ -475,6 +475,88 @@
           </div>
         </div>
       </div>
+
+      <div class="task-section viewpoint-section">
+        <h3 class="task-title">Robustness to Viewpoint Variations</h3>
+        <p class="viewpoint-description">
+          We further evaluate the policy's SE(3) equivariance on the Stack Cube task under camera viewpoint shifts.
+          As the camera rotates from a left-angled view, through the frontal view, to a right-angled view,
+          Geoflow maintains more stable and accurate manipulation than baseline methods,
+          confirming its robustness to egocentric view changes.
+        </p>
+
+        <div class="viewpoint-group">
+          <h4 class="viewpoint-label">Left-Angled View (~20&deg;)</h4>
+          <div class="comparison-videos">
+            <div class="comparison-video-item">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/viewpoint/left/geoflow.mp4" type="video/mp4">
+              </video>
+              <div class="comparison-method-name">Geoflow (Ours)</div>
+            </div>
+            <div class="comparison-video-item">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/viewpoint/left/cp.mp4" type="video/mp4">
+              </video>
+              <div class="comparison-method-name">Canonical Policy</div>
+            </div>
+            <div class="comparison-video-item">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/viewpoint/left/dp3.mp4" type="video/mp4">
+              </video>
+              <div class="comparison-method-name">DP3</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="viewpoint-group">
+          <h4 class="viewpoint-label">Frontal View</h4>
+          <div class="comparison-videos">
+            <div class="comparison-video-item">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/viewpoint/frontal/geoflow.mp4" type="video/mp4">
+              </video>
+              <div class="comparison-method-name">Geoflow (Ours)</div>
+            </div>
+            <div class="comparison-video-item">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/viewpoint/frontal/cp.mp4" type="video/mp4">
+              </video>
+              <div class="comparison-method-name">Canonical Policy</div>
+            </div>
+            <div class="comparison-video-item">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/viewpoint/frontal/dp3.mp4" type="video/mp4">
+              </video>
+              <div class="comparison-method-name">DP3</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="viewpoint-group">
+          <h4 class="viewpoint-label">Right-Angled View (~30&deg;)</h4>
+          <div class="comparison-videos">
+            <div class="comparison-video-item">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/viewpoint/right/geoflow.mp4" type="video/mp4">
+              </video>
+              <div class="comparison-method-name">Geoflow (Ours)</div>
+            </div>
+            <div class="comparison-video-item">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/viewpoint/right/cp.mp4" type="video/mp4">
+              </video>
+              <div class="comparison-method-name">Canonical Policy</div>
+            </div>
+            <div class="comparison-video-item">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/viewpoint/right/dp3.mp4" type="video/mp4">
+              </video>
+              <div class="comparison-method-name">DP3</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
