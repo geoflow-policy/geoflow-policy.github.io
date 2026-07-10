@@ -792,11 +792,6 @@ code {
     margin-top: 1.5rem;
   }
 
-  .comparison-videos {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
   .viewpoint-group {
     margin-bottom: 2.5rem;
   }
@@ -855,11 +850,6 @@ code {
   .task-videos {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
-  }
-
-  .comparison-videos {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
   }
 }
 
